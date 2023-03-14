@@ -91,6 +91,52 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff3a;
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  #loading img {
+    max-width: 200px;
+  }
+  
+  .progress-bar {
+    width: 200px;
+    height: 20px;
+    background: #ccc;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .barr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #007bff;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .percent {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+  }
 
 
 .header {
